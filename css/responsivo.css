@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+  
+.filter-menu li {
+    padding:  1px;
+    align-items: center;
+    justify-content: center;
+}  
+.filter-item li{
+    width: 45%;
+    float: left;
+}
+.filter-item img{
+    width: 105%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}    
+img{
+    width: 5%;
+    height: 30%;
+    margin: 2px;
+}
+
+section {
+    top: 50%;
+    width: 100%;
+    height: 550px;
+}
+
+section .navigation li img{
+    width: 50px;
+}
+
+}
