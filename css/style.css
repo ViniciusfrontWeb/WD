@@ -12,7 +12,7 @@ body{
 
 section{
     position: relative;
-    width: 0%;
+    width: 80%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,9 +21,9 @@ section{
 
 section #galery{
     position: absolute;
-    left: 10;
-    width: 100px;
-    height: 20%;
+    left: 5;
+    width: 200px;
+    height: 40%;
     object-fit: cover;
 }
 
@@ -33,7 +33,7 @@ section .navigation{
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 100;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ section .navigation li{
 section .navigation li img{
     width: 80px;
     border: 1px solid rgb(230, 226, 177);
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .row{
