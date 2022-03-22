@@ -5,55 +5,16 @@
     font-family: sans-serif;
 }
 body{
-    background: rgb(95, 91, 91);
-    min-height: 1200vh;
-}
-
-
-section{
-    position: relative;
-    width: 80%;
-    height: 100vh;
+    background: rgba(79, 88, 104, 0.623);
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-section #galery{
-    position: absolute;
-    left: 5;
-    width: 200px;
-    height: 40%;
-    object-fit: cover;
-}
-
-section .navigation{
-    position: absolute;
-    top: 400px;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-section .navigation li{
-    list-style: none;
-    cursor: pointer;
-    margin: 5px;
-}    
-
-section .navigation li img{
-    width: 80px;
-    border: 1px solid rgb(230, 226, 177);
-    border-radius: 3px;
-}
-
-.row{
-    display: flex;
     flex-wrap: wrap;
 }
-
-
+#main{
+    width: 70%;
+    min-height: 1500px;
+    background: blueviolet;
+}
