@@ -212,7 +212,7 @@ section .btn:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../galery/ships.jpg);
+    background: url(../galery/backdrop.jpg);
     background-position: center;
     background-size: cover;
     padding-top:17rem;
