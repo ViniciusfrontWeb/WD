@@ -1,20 +1,229 @@
+:root{
+    --orange:#ff7800; 
+    --black:#130f40;
+    --light-color:#666;
+    --light-hover:#2ecc71;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:1rem solid rgba(0,0,0,.1);
+    --outline-hover:1rem solid var(--black);
+}
+
 *{
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
+
+html{
+    font-size: 72.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
 body{
-    background: rgba(79, 88, 104, 0.623);
-    min-height: 100vh;
-    width: 100%;
+    background-color: #eee;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background-color: var(--light-color);
+    box-shadow: var(--box-shadow);
+}
+
+.header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 10rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .15rem;
+    background: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.header .navbar a {
+    font-size:  2rem;
+    margin: 2rem 0.2rem;
+    display: block;
+}
+
+.header .navbar a{
+    font-size: 2.2rem;
+    margin: 5 1rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+}
+
+.header .logo i{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 15px;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--orange);   
+}
+
+header .logo  p{
+    display: contents;
+    font-size: 25px;
+    color: var(--light-hover);
+}
+
+.header .logo p:hover{
+    color: var(--black);
+}
+
+.header .icons div{
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: var(--black);
+    color: #eee;
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.header .shopping-cart{
+    position: absolute;
+    top: 110%;
+    right: -150%;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: #fff;
+}
+
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem;
+}
+
+.header .shopping-cart .box img{
+    height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+
+.header .shopping-cart .box .fa-trash:hover{
+    color: red;
+}
+
+.header .shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.header .shopping-cart .box .content .quantify{
+    padding-left: 1rem;
+}
+
+.header .shopping-cart a{
+    font-size: 3rem;
+    padding: 5px;
+    text-align: center;
+    color: var(--black);
+    border-radius: 15px;
+    border:3px solid var(--black);
+    text-transform:uppercase ;
+    
+}
+
+.header .shopping-cart a:hover{
+    color: var(--light-hover);
+}
+
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: .4s linear;
+    
+}
+.header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3rem;
+    font-size: 1.7rem;
+    border:  2rem ;
+    cursor: pointer;
+    background: var(--light-color);
+}
+
+section .btn:hover{
+    color: var(--orange);
+}
+
+.home{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    background: url(../galery/ships.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top:17rem;
+    padding-bottom: 1rem;
 }
-#main{
-    width: 70%;
-    min-height: 1500px;
-    background: blueviolet;
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content  h3{
+    color: #eee;
 }

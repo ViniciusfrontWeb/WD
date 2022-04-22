@@ -4,74 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/filter.css">
-    <link rel="stylesheet" href="css/responsivo.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/section.css">
-
+    <link rel="stylesheet" href="css/car.css">
+    <link rel="stylesheet" href="css/responsive.css">
+ 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
     <title>WD imports</title>
 </head>
 <body> 
+  <header class="header">
+      <a href="#" class="logo"><i class="fa-solid fa-frog"></i><p>WdImports</p></a>
 
-    <a href="javascript:;" title="" class="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </a>
-    <div class="menu">
-        <ul class="menu__list">
-            <li class="menu__item">
-                <a href="#" title="" class="menu__link">Home</a>
-            </li>
-            <li class="menu__item">
-                <a href="#" title="" class="menu__link">About</a>
-            </li>
-            <li class="menu__item">
-                <a href="#" title="" class="menu__link">Services</a>
-            </li>
-            <li class="menu__item">
-                <a href="#" title="" class="menu__link">Contacts</a>
-            </li>
-        </ul>
-    </div>
-        <div id="main">
-            <div class="container">
-                <ul class="filter-menu">
-                    <li data-target="all">All</li>
-                    <li data-target="bone">Bone</li>
-                    <li data-target="chinelo">Chinelo</li>
-                    <li data-target="pochete">pochete</li>
-                </ul>
-        
-                <ul class="filter-item">
-                    <li  data-item="bone"><img src="galery/bone.jpeg" alt=""></li>
-                    <li  data-item="chinelo"><img src="galery/chinelo-jordan.jpeg" alt=""></li>
-                    <li  data-item="pochete"><img src="galery/pochete1.jpeg" alt=""></li>
-                    <li  data-item="bone"><img src="galery/bone1.jpeg" alt=""></li>
-                    <li  data-item="chinelo"><img src="galery/chinelo-fila.jpeg" alt=""></li>
-                    <li  data-item="pochete"><img src="galery/pochete3.jpeg" alt=""></li>
-                    <li  data-item="bone"><img src="galery/bone-nike1.jpeg" alt=""></li>
-                    <li  data-item="chinelo"><img src="galery/chinelo-jordan1.jpeg" alt=""></li>
-                    <li  data-item="pochete"><img src="galery/pochete2.jpeg" alt=""></li>
-                </ul>
-            </div>
-        
-          <section>
-                <img src="galery/principal.jpeg"  alt="" id="galery">
-                <ul class="navigation">
-                    <li onclick="imgSlider('galery/frente.jpeg')"><img src="galery/frente.jpeg" alt=""></li>
-                    <li onclick="imgSlider('galery/frente1.jpeg')" ><img src="galery/frente1.jpeg"alt></li>
-                    <li  onclick="imgSlider('galery/frente3.jpeg')"  ><img src="galery/frente3.jpeg" alt=""></li>
-                    <li onclick="imgSlider('galery/frete4.jpeg')" ><img src="galery/frete4.jpeg"alt= ""></li>
-                </ul>
-            </section>
-         
+        <!--navBar menuhamburg-->
+      <nav class="navbar">           
+          <a href="#home">home</a>
+          <a href="#product">product</a>
+      </nav>
+        <!--icons-->
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
         </div>
-        <script src="nav.js"></script>
-    <script src="javascript/galery.js"></script>
-    <script src="javascript/sintase.js"></script>
-   
+                <!--cards shooping cart-->
+            <div class="shopping-cart">
+                <div class="box">
+                    <i class="fa-solid fa-trash"></i>
+                    <img src="galery/adidas.jpeg" alt="">
+                    <div class="content">
+                        <h3>adidas</h3>
+                        <span class="quantify">qt:1</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-trash"></i>
+                    <img src="galery/h.jpeg" alt="" >
+                    <div class="content">
+                        <h3>Hening</h3>
+                        <span class="quantify">qt:1</span>
+                    </div>
+                </div>
+        <a href="https://wa.me/11991856022">Ton Gomes</a>
+    </div>
+           
+  </header>
+             <!--home-->
+           <section class="home" id="home">
+            <div class="content">
+                <h3>fresh and <span>organic</span> products for your</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquem libero mostrum venuam facere tempore nisi.
+                    </p>
+                    <a href="#" class="btn">shop now</a>
+            </div>
+        </section> 
+  
 </body>
+    <script src="javascript/menu.js"></script>
+   <script src="javascript/car.js"></script>  
 </html>
