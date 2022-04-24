@@ -77,7 +77,7 @@ body{
 .header .logo i{
     font-size: 1.8rem;
     font-weight: bolder;
-    padding: 13px;
+    padding: 7px;
     color: var(--black);
 }
 
