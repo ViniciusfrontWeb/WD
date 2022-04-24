@@ -77,7 +77,7 @@ body{
 .header .logo i{
     font-size: 1.8rem;
     font-weight: bolder;
-    padding: 15px;
+    padding: 13px;
     color: var(--black);
 }
 
@@ -221,7 +221,7 @@ section .btn:hover{
 
 .home .content{
     text-align: center;
-    width: 60rem;
+    width: 10rem;
 }
 
 .home .content  h3{
