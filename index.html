@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/car.css">
     <link rel="stylesheet" href="css/responsive.css">
- 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/ofertas.css">
+    <link rel="stylesheet" href="css/variedades.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
     <title>WD imports</title>
@@ -21,7 +24,9 @@
         <!--navBar menuhamburg-->
       <nav class="navbar">           
           <a href="#home">home</a>
-          <a href="#product">product</a>
+          <a href="#categories">Categorias</a>
+          <a href="#ofertas">Ofertas</a>
+          <a href="#variedades">variedades</a>
       </nav>
         <!--icons-->
         <div class="icons">
@@ -52,17 +57,17 @@
   </header>
              <!--home-->
            <section class="home" id="home">
-            <div class="content">
+         <div class="content">
                 <h3>Produtos de Alta  <span>Qualidade</span> </h3>
                     <p>Tudo que você precisa de moda esta aqui.
                     </p>
                     <a href="#" class="btn">shop now</a>
-            </div>
+                </div>
         </section> 
-        <!--ofertas item-->
-            <section class="features" id="features">
-                <h1 class="heading">Nossas <span>Ofertas</span></h1>
-                    <section>
+        <!--categorias item-->
+            <section class="categories" id="categories">
+                <h1 class="heading">Nossas <span>Categorias</span></h1>
+                    <section class="item" >
                         <ul>
                             <li class="list active" data-filter="all">All</li>
                             <li class="list" data-filter="pochete">Pochete</li>
@@ -89,15 +94,88 @@
                         </div>
                     </section>
             </section>
+              <!--ofertas-->
+              <section class="ofertas" id="ofertas">
+                <h1 class="heading">Nossas <span>Ofertas</span></h1>
 
-         <section class="categories" id="categories">
-            <h1 class="heading">Nossas <span>Categorias</span></h1>
-                
-         </section>   
-            
-            <section class="footer">
-               
+                <section class="team">
+                    <div class="conti">
+                    
+                        <div class="row mgt50px">
+                            <div class="column"> 
+                                <div class="bx">
+                                    <img src="galery/camisa-bone.jpeg" alt="">    
+                                </div>
+                                <div class="details">
+                                    <a href="#" class="btn">shop now</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="bx">
+                                    <img src="galery/camisa-bone1.jpeg" alt="">    
+                                </div>
+                                <div class="details">
+                                    <a href="#" class="btn">shop now</a>
+                                </div>    
+                            </div>
+                            <div class="column"> 
+                                <div class="bx">
+                                    <img src="galery/camisa-bone2.jpeg" alt="">    
+                                </div>
+                                <div class="details">
+                                    <a href="#" class="btn">shop now</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="bx">
+                                    <img src="galery/camisa-bone4.jpeg" alt="">    
+                                </div>
+                                <div class="details">
+                                    <a href="#" class="btn">shop now</a>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </section>
             </section>
+              
+         <!--variedades-->
+         <section class="variedades" id="variedades">
+                <h1 class="heading"> Nossas <span>variedades</span></h1>
+                    <div class="conta">
+                        <div class="card">
+                            <div class="imgbx">
+                                <img src="galery/frente.jpeg" alt="">
+                            </div>
+                            <div class="conte">
+                                <h2>Bulls</h2>
+                                <p>Aproveite Nossas Promoções</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="imgbx">
+                                <img src="galery/frente1.jpeg" alt="">
+                            </div>
+                            <div class="conte">
+                                <h2>Chicago</h2>
+                                <p>Aproveite Nossas Promoções</p>
+                            </div>   
+                        </div>
+                        <div class="card">
+                            <div class="imgbx">
+                                <img src="galery/frente3.jpeg" alt="">
+                            </div>
+                            <div class="conte">
+                                <h2>Lakers</h2>
+                                <p>Aproveite Nossas Promoções</p>
+                            </div>   
+                        </div>
+                    </div>
+            </section> 
+       
+       
+         
+            
 </body>
     <script src="javascript/item.js"></script>
     <script src="javascript/menu.js"></script>

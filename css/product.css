@@ -1,0 +1,27 @@
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product .itemBox{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 1px 14px;
+}
+
+.product .itemBox.hide{
+    display: none;
+}
+
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}

@@ -1,0 +1,64 @@
+:root{
+    --orange:#ff7800; 
+    --black:#130f40;
+    --light-color:#666;
+    --light-hover:#2ecc71;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:1rem solid rgba(0,0,0,.1);
+    --outline-hover:1rem solid var(--black);
+}
+
+.conta{
+    display: flex;
+    min-width: 10vh;
+    justify-content: center;
+}
+
+.conta .card{
+    position: relative;
+    width:calc(25% - 20px);
+    height: 105px;
+    background: var(--black);
+    margin: 5px 3px;
+    padding: 20px 55px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px var(--light-color) ;
+    transition: 0.3s ease-in-out;
+}
+
+.conta .card:hover{
+    height: 350px;
+}
+
+.conta .card .imgbx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -60px;
+    left: -8px;
+    z-index: 1;
+}
+
+.conta .card .imgbx img{
+    max-width: 90%;
+    border-radius: 4px;
+}
+
+.conta .card .conte{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    color: var(--light-hover);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.conta .card:hover .conte{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}

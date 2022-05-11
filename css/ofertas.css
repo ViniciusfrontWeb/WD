@@ -1,0 +1,55 @@
+:root{
+    --orange:#ff7800; 
+    --black:#130f40;
+    --light-color:#666;
+    --light-hover:#2ecc71;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:1rem solid rgba(0,0,0,.1);
+    --outline-hover:1rem solid var(--black);
+}
+.team{
+    padding: 16px  40;
+    height: 40vh;
+    box-sizing: border-box;
+}
+
+.conti{
+    width: 150%;
+    margin: 10px 20px;
+}
+
+.row{
+    min-width: 10%;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+
+.row .column {
+    margin: 6px 2px;
+    position: relative;
+    min-height: 10vh;
+    width: 120px;
+    background: var(--black);
+    float: left;
+    box-sizing: border-box;
+}
+
+.mgt50px{
+    margin-top: 5px;
+}
+
+.row .column .bx{
+    position: relative;
+}
+
+.row .column .bx img{
+    width: 100%;
+    transition: 5%;
+}
+
+.row .column:hover .bx img{
+    transform: scale(1.5);
+}
