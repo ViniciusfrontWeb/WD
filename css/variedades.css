@@ -8,57 +8,83 @@
     --outline:1rem solid rgba(0,0,0,.1);
     --outline-hover:1rem solid var(--black);
 }
-
-.conta{
-    display: flex;
-    min-width: 10vh;
-    justify-content: center;
-}
-
-.conta .card{
+.box{
     position: relative;
-    width:calc(25% - 20px);
-    height: 105px;
+    width: 300px;
+    height: 300px;
+    margin: 80px 1px;
     background: var(--black);
-    margin: 5px 3px;
-    padding: 20px 55px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 20px var(--light-color) ;
-    transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    align-items: center;
 }
 
-.conta .card:hover{
-    height: 350px;
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 40px;
+    
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
 }
 
-.conta .card .imgbx{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    top: -60px;
-    left: -8px;
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 7px;
+    background: var(--black);
+    border-radius: 50%;
     z-index: 1;
 }
 
-.conta .card .imgbx img{
-    max-width: 90%;
-    border-radius: 4px;
+.box:hover::before{
+    inset: -20px 0px;
 }
 
-.conta .card .conte{
+.conts{
+    position: absolute;
+    inset: 30px;
+    border: 6px solid var(--black);
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+}
+
+.conts img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.conts h2{
     position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    color: var(--light-hover);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
-.conta .card:hover .conte{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
+.box:hover .conts img {
+    opacity: 0;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
 }

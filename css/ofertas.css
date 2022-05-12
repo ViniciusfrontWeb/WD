@@ -9,14 +9,15 @@
     --outline-hover:1rem solid var(--black);
 }
 .team{
-    padding: 16px  40;
+    padding: 36px;
+  
     height: 40vh;
     box-sizing: border-box;
 }
 
 .conti{
-    width: 150%;
-    margin: 10px 20px;
+    width: 400%;
+    margin: 55px 15px;
 }
 
 .row{
@@ -38,7 +39,7 @@
 }
 
 .mgt50px{
-    margin-top: 5px;
+    margin-top: 55px;
 }
 
 .row .column .bx{

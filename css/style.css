@@ -82,14 +82,14 @@ body{
 }
 
 .header .icons div{
-    height: 3.5rem;
+    height: 6.3rem;
     width: 3.5rem;
-    line-height: 4.5rem;
+    line-height: 5.5rem;
     border-radius: .5rem;
     background: var(--black);
     color: #eee;
     font-size: 2rem;
-    margin-right: .3rem;
+    margin-right: 1.3rem;
     cursor: pointer;
     text-align: center;
 }
@@ -198,11 +198,10 @@ section .btn:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../galery/backdrop.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-top:8rem;
-    padding-bottom: 5.5rem;
+    background-color: #130f40;
+    padding-top:7.5rem;
+    padding-bottom: 0.5rem;
+    
 }
 
 .home .content{

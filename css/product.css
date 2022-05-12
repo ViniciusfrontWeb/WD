@@ -1,9 +1,9 @@
 .product{
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
+} 
 
 .product .itemBox{
     position: relative;
