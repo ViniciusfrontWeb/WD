@@ -10,6 +10,7 @@
 }
 
 body{
+    display: block;
     background-color: #eee;
     min-height: 100vh;
     justify-content: center;
@@ -26,13 +27,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1px 19%;
+    padding: 1px 2%;
     background-color: var(--light-color);
     box-shadow: var(--box-shadow);
 }
 .header .navbar {
     position: absolute;
-    top: 110%;
+    top: 15%;
     right: -100%;
     width: 15rem;
     height: 200%;
@@ -124,10 +125,10 @@ body{
 .header .shopping-cart .box .fa-trash{
     font-size: 2rem;
     position: absolute;
-    top: 50%;
+    top: 5%;
     right: 2rem;
     cursor: pointer;
-    color: var(--light-color);
+    color: var(--light-hover);
     transform: translateY(-50%);
 }
 
@@ -235,7 +236,7 @@ section .btn:hover{
     background: var(--black);
     color: #fff;
     display: inline-block;
-    padding: 1rem 3rem;
+    padding: 1rem 13rem;
     clip-path: polygon(100% 0 , 93% 50% , 100% 99%, 0% 100%,7% 50%, 0% 0%);
 }
 
