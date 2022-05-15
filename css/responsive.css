@@ -42,19 +42,27 @@
     }
     
     .home{
-        width: 80%;
+        width: 100%;
         height: 180px;
     }
 
     .header  {   
         width: 77%;
-        margin: 0 ;   
+        margin: 0 ; 
+         
     }
    
     .heading span{
     padding: 1rem 1.2rem;
     }
+    .header .navbar  a{
+        width: 50%;
+        height: 15%;
+    }
 
+    .header .navbar {
+        top: 90%;
+    }
     .section{
      padding: 5%;
     }
