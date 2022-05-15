@@ -14,31 +14,26 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 1200px;
-    margin: 5px 0;
+    min-width: 100px;
+    margin: 15px 20px;
 }
 
 .profile .cardb{
     position: relative;
     min-width: 300px;
     height: 300px;
-    box-shadow: 
-    inset -3px -3px 1px var(--light-color),
-    
-    -3px -3px 13px var(--light-color);
-    margin: 2px;
+    margin: 5px;
 }
 
 .profile .cardb .bx{
     position: absolute;
-    top: 1px;
+    top: 10px;
     left: 1px;
-    right: 1px;
+    right: 10px;
     bottom: 1px;
-    background: var(--black);
-    border: 2px solid red;
+    border: 2px solid  green;
     border-radius: 5px;
-    box-shadow: 0 5px 2px var(--black);
+    box-shadow: 0 5px 2px var(--light-color);
     transition: 0.5%;
 }
 
@@ -50,7 +45,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;

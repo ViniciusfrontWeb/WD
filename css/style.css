@@ -47,14 +47,14 @@ body{
 .header .navbar a {
     font-size:  2.5rem;
     padding: 0 1.2rem;
-    display: block;
+    display: flex;
     text-decoration: none;
 }
 
 .header .navbar a:active{
     font-size: 2.2rem;
-    margin: 5 1rem;
-    color: var(--black);
+    margin: 3 1rem;
+    color: var(--b);
 }
 
 .header .navbar a:hover{
@@ -200,7 +200,7 @@ section .btn:hover{
     align-items: center;
     justify-content: center;
     background-color: #130f40;
-    padding-top:7.5rem;
+    padding-top:5.5rem;
     padding-bottom: 0.5rem;
     
 }

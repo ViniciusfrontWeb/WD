@@ -11,10 +11,10 @@
 
 @media (max-width:991px){
     html {
-        font-size: 105%;
+        font-size: 15%;
     }
     .header{
-        padding: 2rem;
+        padding: 42rem;
     }
     .heading{
         font-size: 1.9rem ;
@@ -25,31 +25,50 @@
 
 @media (max-width:768px){
 
-    #menu-btn{
-        display: inline-block;
-    }
     .header{
         padding: 2rem;
     }
     section {
         padding: 2rem ;
     }
+    .box{
+        padding: 5px;    
+    }
 }
 
 @media (max-width:450px){
     html {
-        font-size: 50%;
+        font-size: 70%;
     }
-    .header{
-      width: 100%;
-    }
-    .product .itemBox{
-        position: relative;
-        width: 70px;
-        height: 70px;
-        margin: 5px 2px;
-        display: block;
+    
+    .home{
+        width: 80%;
+        height: 180px;
     }
 
+    .header  {   
+        width: 77%;
+        margin: 0 ;   
+    }
+   
+    .heading span{
+    padding: 1rem 1.2rem;
+    }
+
+    .section{
+     padding: 5%;
+    }
+
+    .item{
+        width: 5%;
+    }
+    .item ul li{
+        width: 10%;
+        height: 15%;
+    }
+    .product .itemBox img{
+        width: 50%;
+        height: 15%;
+    }
+    
 }
-
