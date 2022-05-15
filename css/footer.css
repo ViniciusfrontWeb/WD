@@ -14,8 +14,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--black);
-    width:100%;
+    background-color: red;
+    width:99%;
+    height: 50px;
     bottom: 0;
 }
 
