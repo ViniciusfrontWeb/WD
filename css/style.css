@@ -8,11 +8,15 @@
     --outline:1rem solid rgba(0,0,0,.1);
     --outline-hover:1rem solid var(--black);
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    
+}
 body{
     display: block;
     background-color: #eee;
-    min-width:100;
+    min-width :100px;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
@@ -35,8 +39,8 @@ body{
     position: absolute;
     top: 15%;
     right: -100%;
-    width: 15rem;
-    height: 200%;
+    width: 5rem;
+    height: 100%;
     box-shadow: var(--box-shadow);
     border-radius: .55rem;
     background: #fff;
@@ -103,10 +107,11 @@ body{
 .header .shopping-cart{
     position: absolute;
     top: 100%;
-    right: -150%;
+    right: -500%;
     padding: 1rem;
+    border-radius: 50px;
     box-shadow: var(--box-shadow);
-    width: 10rem;
+    width: 30rem;
     background: #fff;
 }
 
@@ -262,14 +267,14 @@ section .btn:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .item ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     margin-bottom: 20px;
 }
 .item ul li {
