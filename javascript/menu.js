@@ -1,11 +1,8 @@
-let  navbar= document.querySelector('.navbar')
+function openFucntion(){
+    document.getElementById("menu").style.width="300px";
 
-document.querySelector('#menu-btn').onclick =()=>{
-    navbar.classList.toggle('active');
-    shoppingCart.classList.remove('active')
 }
-
-window.onscroll = ()=>{
-    shoppingCart.classList.toggle('active')
-    navbar.classList.remove ('active')
+function closeFucntion(){
+    document.getElementById("menu").style.width="0px";
+    
 }
