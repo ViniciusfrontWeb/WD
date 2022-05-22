@@ -42,21 +42,21 @@
         font-size: 70%;
     }
  
-    .header  {   
-      top: 0px;
-      height: 50px;   
-      justify-content: flex-end;
-    }
     .icons{
         width: 10pc;
+    }
+    .home{
+        top: 55%;
+        width: 100%;
+        height: 550%;
     }
 
     .heading span{
     padding: 1rem 2.2rem;
     }
 
-    .section{
-     padding: 5%;
+    section{
+        padding: 5rem 2%;
     }
 
     .item{
@@ -85,7 +85,7 @@
     .conts .box{
 
         display: flex;
-        width: 200px;
+        width: 100px;
         height: 200px;
         align-items: center;
         justify-content: center;

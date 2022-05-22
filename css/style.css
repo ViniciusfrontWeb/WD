@@ -11,21 +11,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
-    outline: none;
-}
-body{
-    display: block;
-    background-color: #eee;
-    min-width :100px;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+    text-transform: capitalize;
+    border: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
 }
 
+
 html{
-    font-size: 80.5%;
+    font-size: 80.80%;
     overflow-x: hidden;
     
 }
@@ -38,38 +33,9 @@ html{
     font-size: 25px;
 }
 
- .header .sidemenu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 25%;
-    z-index: 1;
-    padding-top: 50px;
-    overflow-x: hidden;
-    background-color: #999;
-}
-.header .sidemenu a{
-    display: block;
-    padding: 4px 4px 4px 64px;
-    text-decoration: none;
-    font-size:20px ;
-    color: var(--black);
-}
 
-.header .sidemenu a:hover{
-    color: var(--orange);
-}
-
-.header .sidemenu .closebtn{
-    position: absolute;
-    top: 0;
-    left: 5px;
-    font-size: 36px;
-    margin-left: 32px;
-}
 section{
-    padding: 1rem 2%;
+    padding: 5rem 2%;
 }
 
 section .btn{
@@ -87,22 +53,20 @@ section .btn:hover{
 }
 
 .home{
+    width: 100%;
+    background: var(--black);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #130f40;
-    padding-top:5.5rem;
-    padding-bottom: 0.5rem;
-    
 }
 
 .home .content{
     text-align: center;
-    width: 60rem;
+    align-items: center;
+    width: 150rem;
 }
 
 .home .content  h3{
     color: #eee;
+    
 }
 
 .home .content h3 span{
@@ -118,7 +82,7 @@ section .btn:hover{
 .heading{
     text-align: center;
     padding: 2rem 0;
-    padding-bottom:3rem;
+    padding-bottom:13rem;
     font-size: 2.5rem;
     color: var(--black);
 }
