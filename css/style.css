@@ -43,19 +43,7 @@ section{
     padding: 5rem 2%;
 }
 
-section .btn{
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 1rem 0.2rem;
-    font-size: 1.3rem;
-    border:  2rem ;
-    cursor: pointer;
-    background: var(--light-color);
-}
 
-section .btn:hover{
-    color: var(--orange);
-}
 
 .home{
     width: 100%;
