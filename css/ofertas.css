@@ -8,30 +8,32 @@
     --outline:1rem solid rgba(0,0,0,.1);
     --outline-hover:1rem solid var(--black);
 }
-.ofertas-content{
+
+.ofertas-container{
     display: flex;
-    grid-template-columns: repeat(2fr);
-    gap: 2rem;
-    padding: 10px 30px;
-    min-width: 100%;
-    margin: 20px auto;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+.icon-image{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: var(--light-color);
+    border-radius: 50%; 
+    margin:  10px;
 }
 
-.ofertas-box{
-    display: flex;
-    
-    align-items: center;
-    text-align: center;
-    padding: 5px 5px ;
-    border-radius: 14px;
-    background-color: var(--black);
+
+.icon-image img {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 50%;
+    transform: translate(-50%,-2%);
+    object-fit: cover;
+    border-radius:50%;
+    border: 3px solid var(--orange);
+   
 }
 
-.ofertas-box img{
-    
-    width: 120px;
-    height: 120px;
-}
